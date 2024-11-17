@@ -1,0 +1,47 @@
+# Archivos compilados de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Archivos de bases de datos SQLite (usados en el entorno de desarrollo)
+*.sqlite3
+*.db
+*.db-journal
+
+# Entornos virtuales de Python
+venv/
+env/
+*/env/
+*/venv/
+
+# Archivos de migraciones de la base de datos
+migrations/
+
+# Archivos de logs
+*.log
+
+# Archivos temporales generados por editores y sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos generados por IDEs
+.vscode/
+.idea/
+
+# Archivos de configuración locales
+*.local
+*.env
+
+# Archivos de configuración de Django
+*.pot
+
+# Dependencias de Python
+Pipfile.lock
+
+# Archivos de pruebas (si estás ejecutando tests y no quieres subir resultados)
+*.bak
+*.swp
+
+# Archivos generados por el sistema operativo
+*.swp
