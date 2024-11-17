@@ -56,11 +56,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'auth_login.urls'
 
+# auth_login/settings.py
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR / 'templates'],  # Se debe indicar que las plantillas están en 'templates'
+        'APP_DIRS': True,                  # Permite buscar dentro de las aplicaciones
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -71,6 +73,9 @@ TEMPLATES = [
         },
     },
 ]
+
+
+
 
 WSGI_APPLICATION = 'auth_login.wsgi.application'
 
@@ -120,7 +125,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+# Si tienes archivos estáticos adicionales, puedes agregar la siguiente línea
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
