@@ -2,3 +2,5 @@
 gestion_usuarios\app\__pycache__
 
 gestion_usuarios\frontend\node_modules
+
+gestion_usuarios\user_crud_microservice\__pycache__
